@@ -1,0 +1,14 @@
+CRITICAL - 2023-05-23 15:23:22 --> The route for "/user/login" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+ 2 SYSTEMPATH/Common.php(880): CodeIgniter\HTTP\RedirectResponse->route()
+ 3 APPPATH/Views/user/register.php(34): redirect()
+ 4 SYSTEMPATH/View/View.php(213): include('/home/hilman/Desktop/aksarinesia/app/Views/user/register.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 7 APPPATH/Controllers/User/Page.php(18): view()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User\Page->register()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/hilman/Desktop/aksarinesia/public/index.php')
